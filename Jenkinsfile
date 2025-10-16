@@ -18,7 +18,7 @@ pipeline {
                 script {
                     // Initialize the Terraform working directory
                     withCredentials([file(credentialsId: 'gcp-service-account', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
-                        sh 'terraform init'
+                        sh 'terraform init -migrate-state'
                     }
                 }
             }
