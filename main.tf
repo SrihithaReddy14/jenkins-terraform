@@ -1,6 +1,6 @@
 # 1. VPC Configuration
 resource "google_compute_network" "vpc_network" {
-  name                    = "vpc-network"
+  name                    = "vpc-network-test"
   auto_create_subnetworks = false
 }
 
@@ -12,7 +12,7 @@ resource "google_compute_subnetwork" "subnet" {
   ip_cidr_range = "10.0.0.0/24"
 }
 
-resource "google_storage_bucket" "sristorage" {
-  name = "sristorage"
+resource "google_storage_bucket" "sristoragetest" {
+  name = "sristoragetest"
   location = "US"
 }
