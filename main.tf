@@ -12,7 +12,7 @@ resource "google_compute_subnetwork" "subnet" {
   ip_cidr_range = "10.0.0.0/24"
 }
 
-resource "google_storage_bucket" "importbucket07" {
-  name = "importbucket07"
+resource "google_storage_bucket" "sristorage" {
+  name = "sristorage"
   location = "US"
 }
